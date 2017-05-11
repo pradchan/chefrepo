@@ -1,0 +1,23 @@
+{
+  "name": "my_product_role",
+  "description": "",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "parent_cookbook": {
+      "http_port": "9000"
+    }
+  },
+  "override_attributes": {
+
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[my_java_cookbook]",
+    "recipe[my_oracle_cookbook]",
+    "recipe[my_weblogic_cookbook::special]",
+    "recipe[parent_cookbook::parent]"
+  ],
+  "env_run_lists": {
+
+  }
+}

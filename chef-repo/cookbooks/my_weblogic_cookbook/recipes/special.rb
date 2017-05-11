@@ -1,0 +1,1 @@
+Chef::Log.info("Inside special my_weblogic_cookbook")
